@@ -31,6 +31,6 @@ namespace blissBackend.repository.ClientService
         await _booksCollection.ReplaceOneAsync(x => x.Id == id, updatedBook);
         public async Task RemoveAsync(string id) =>
         await _booksCollection.DeleteOneAsync(x => x.Id == id);
-    }
+    }//
 
 }
